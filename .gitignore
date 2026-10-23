@@ -19,3 +19,6 @@ projects/*/node_modules/
 # 若要固定版本，改用 git submodule 指向上游仓库
 projects/*/tool-src/
 projects/*/*.zip
+
+# 批量下载的 Agent Skill 本体（合计约 800MB，可随时用 tools/install-skills.sh 重下）
+skills/
