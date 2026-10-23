@@ -1,31 +1,37 @@
 # 视频制作资源目录
 
-下表用于快速选型。许可信息是初步提示，不构成完整许可结论；具体使用前核对原仓库当前许可证、素材来源和依赖要求。
+下表用于快速选型。**链接已于 2026-10-23 核实并修正**——原记录把作者名错写成了本地账号 `hehongjun300-bot`，7 条链接全部 404。
 
-| 项目 | 形态 | 主用途 / 次用途 | 获取 | 许可筛选提示 | 详情 |
+## 关键事实：这些 skill 全是「用代码画画面」，没有一个是 AI 生成真人视频
+
+如果你要做真人出镜、实拍感的视频（如 P-005 的 iPhone 自拍），这 7 个都**做不到**，
+需要另外接入视频生成服务（Runway / Sora / 可灵等）。它们能做的都是几何图形、
+文字、UI 截图、数据图表这类由代码绘制的内容。
+
+| 项目 | 真实出处 | 星标 | 能做什么 | 许可证 | 详情 |
 |---|---|---|---|---|---|
-| video-shotcraft | Agent Skill + 工程/镜头库 | 产品与 UI 宣传 / 运镜、节奏包装 | 免费 | Apache-2.0；部分音效来源不明，Remotion 另有条件 | [条目](video-shotcraft.md) |
-| xilo-opus-video | Agent Skill + 渲染脚本 | 通用视频方案与制作 / 产品、知识、数据 | 免费 | MIT；另查字体、素材与所选框架 | [条目](xilo-opus-video.md) |
-| lemo-opuscar | Agent Skill + 插件/风格库 | 艺术叙事短片 / 知识、数据、发布片 | 免费 | 代码 MIT；样片/剧照 CC BY 4.0；第三方素材另查 | [条目](lemo-opuscar.md) |
-| mg-styles-15 | 提示词 + 样片 + 源码包 | MG 风格参考 / 品牌动态设计 | 免费 | MIT；字体及第三方组件按各自许可 | [条目](mg-styles-15.md) |
-| huashu-art-motion | Agent Skill + 引擎/风格资料 | 艺术动画 / 口播、白板、数据解释 | 免费 | 代码 MIT；花叔与 Clawd 角色等示例有排除项 | [条目](huashu-art-motion.md) |
-| dashi-animationstyle | Agent Skill + 风格模板/脚本 | 中文口播解说 / 信息与流程可视化 | 免费 | MIT；附带作者口播.wav 仅供测试 Skill | [条目](dashi-animationstyle.md) |
-| wtt-code-animation-studio | Agent Skill + 项目模板/流水线 | 中文旁白代码动画 / 文章与故事可视化 | 免费 | 根文档声明 CC BY-NC-SA 4.0；子文档冲突，接单选用待澄清 | [条目](wtt-code-animation-studio.md) |
+| video-shotcraft | [Vincentwei1021](https://github.com/Vincentwei1021/video-shotcraft) | 13.2k | 产品/UI 宣传片，158 张镜头卡 | Apache-2.0 | [条目](video-shotcraft.md) |
+| lemo-opuscar | [lemomo-ai](https://github.com/lemomo-ai/lemo-opuscar) | 6.0k | 59 种电影风格的艺术短片 | MIT | [条目](lemo-opuscar.md) |
+| huashu-art-motion | [alchaincyf](https://github.com/alchaincyf/huashu-art-motion) | 5.0k | 35 种艺术风格，口播/白板/数据 | MIT | [条目](huashu-art-motion.md) |
+| mg-styles-15 | [Vincentwei1021](https://github.com/Vincentwei1021/mg-styles-15) | 1.9k | 15 种动态图形风格参考 | MIT | [条目](mg-styles-15.md) |
+| xilo-opus-video | [Kianzzz](https://github.com/Kianzzz/xilo-opus-video) | 250 | 通用视频，先出 3 个方案再定稿 | MIT | [条目](xilo-opus-video.md) |
+| dashi-animationstyle | [chuspeeism](https://github.com/chuspeeism/dashi-animationstyle) | 118 | 中文口播 → 7 种画风讲解动画 | **待人工核实** | [条目](dashi-animationstyle.md) |
+| wtt-code-animation-studio | **来源无法核实** | — | 中文旁白代码动画（未证实） | 无法核实 | [条目](wtt-code-animation-studio.md) |
 
-## 核查进度
+## 选型建议
 
-| 项目 | 许可结论 | 核查日期 | 结论 |
-|---|---|---|---|
-| video-shotcraft | Apache-2.0（未核实原文） | — | 待开始（P-002） |
-| xilo-opus-video | MIT（未核实原文） | — | 待开始（P-002） |
-| lemo-opuscar | MIT / 样片 CC BY 4.0（未核实） | — | 待开始（P-002） |
-| mg-styles-15 | MIT（未核实原文） | — | 待开始（P-002） |
-| huashu-art-motion | MIT + 角色排除项（未核实） | — | 待开始（P-002） |
-| dashi-animationstyle | MIT（未核实原文） | — | 待开始（P-002） |
-| wtt-code-animation-studio | CC BY-NC-SA 4.0，子文档冲突 | — | 待开始（P-002），接单需先澄清 |
+| 你要做什么 | 用哪个 |
+|---|---|
+| App / 网站 / 产品宣传片 | **video-shotcraft**（已在本地，P-001 就是它做的） |
+| 有强烈视觉风格的艺术短片 | lemo-opuscar |
+| 中文口播的知识讲解 | dashi-animationstyle 或 huashu-art-motion |
+| 品牌片头、转场、信息图动效 | mg-styles-15 |
+| 要「先看方案再定稿」的正式项目 | xilo-opus-video |
+| **真人出镜 / 实拍感画面** | **以上都不行**，需接视频生成服务 |
 
-> 核查任务在看板 [P-002](../PROJECT_STATUS.md)。因 P-001 不动第三方素材，本轮不阻塞出片。
+## 核查状态
 
-## 状态
-
-尚未验证各仓库当前内容、许可证原文、依赖或素材来源。接入顺序与选择由实际项目需求决定。
+- 6 个项目的出处、星标、许可证已核实（2026-10-23）
+- `dashi-animationstyle` 的 LICENSE 存在但无法自动识别，商用前需人工读原文
+- `wtt-code-animation-studio` 在 GitHub 上已找不到，**不要依据原记录使用**
+- 接入顺序与选择由实际项目需求决定

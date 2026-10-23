@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-23 20:51",
+  "updated": "2026-10-23 21:25",
   "max_in_progress": 3,
   "tasks": [
     {
@@ -61,14 +61,15 @@
     {
       "id": "P-005",
       "title": "iPhone 前置自拍掉地 5 秒视频",
-      "status": "待开始",
-      "owner": "",
-      "blocked": "",
+      "status": "待确认",
+      "owner": "Codex",
+      "blocked": "当前会话未连接 Runway 或其他视频生成工具；需要先连接可用的视频生成服务才能依据三视图渲染 MP4",
       "evidence": [],
-      "next": "按 projects/P-005-iphone-selfie-drop/PROMPT.md 出第一版，附三视图参考图",
+      "next": "连接 Runway 或其他视频生成工具后，按 RUNWAY_PROMPT.md 出 out/v1.mp4 并用 ffprobe 核对",
       "created": "2026-10-23 20:51",
-      "updated": "2026-10-23 20:51",
-      "priority": 1
+      "updated": "2026-10-23 21:25",
+      "priority": 1,
+      "note": "三视图已复制，生成提示词已补全；待连接视频生成工具"
     }
   ],
   "questions": [
@@ -88,6 +89,12 @@
       "text": "projects/P-001-5s-splash/tool-src/ 是 302MB / 11825 个文件的上游 video-shotcraft 副本，放进仓库会让 clone 变慢。改成 .gitignore 排除、或改为 git submodule？",
       "at": "2026-10-23 20:20",
       "by": "Claude",
+      "resolved": false
+    },
+    {
+      "text": "[P-005] 当前会话未连接 Runway 或其他视频生成工具；需要先连接可用的视频生成服务才能依据三视图渲染 MP4",
+      "at": "2026-10-23 21:21",
+      "by": "Codex",
       "resolved": false
     }
   ],
@@ -116,6 +123,21 @@
       "at": "2026-10-23 20:55",
       "by": "Claude",
       "text": "给任务加 priority 字段（数字小=优先），让 pick 先推荐真实视频工作而不是内务核查。"
+    },
+    {
+      "at": "2026-10-23 21:19",
+      "by": "Codex",
+      "text": "接手 P-005「iPhone 前置自拍掉地 5 秒视频」"
+    },
+    {
+      "at": "2026-10-23 21:21",
+      "by": "Codex",
+      "text": "P-005 阻塞：当前会话未连接 Runway 或其他视频生成工具；需要先连接可用的视频生成服务才能依据三视图渲染 MP4"
+    },
+    {
+      "at": "2026-10-23 21:25",
+      "by": "Codex",
+      "text": "P-005 → 待确认。三视图已复制，生成提示词已补全；待连接视频生成工具"
     }
   ]
 }
