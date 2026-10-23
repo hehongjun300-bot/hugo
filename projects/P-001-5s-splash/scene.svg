@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#F4F2ED"/>
+<g fill="none" stroke="#1A1A1A" stroke-width="6" stroke-linecap="butt">
+<path id="baseline" d="M384 640H1056"/>
+<path id="arc" d="M420 748 C640 748 840 656 1020 656" stroke-linecap="round"/>
+</g>
+<circle id="circle" cx="560" cy="540" r="100" fill="#1A1A1A"/>
+<g id="blocks" fill="#1A1A1A"><rect x="840" y="584" width="56" height="56" rx="12"/><rect x="920" y="584" width="56" height="56" rx="12"/><rect x="1000" y="584" width="56" height="56" rx="12"/></g>
+<path id="orange" d="M636 680H804 M888 680H1056" stroke="#E85A2C" stroke-width="6" stroke-linecap="butt"/>
+<g id="copy" fill="#1A1A1A" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" text-anchor="start">
+<text x="1200" y="560" font-size="72" font-weight="600" letter-spacing="1.44">一起，向前</text>
+<text x="1200" y="618" font-size="26" font-weight="400" letter-spacing="0.52">2026</text>
+</g>
+</svg>

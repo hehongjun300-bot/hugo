@@ -1,14 +1,36 @@
-# Codex 视频制作资源库
+# hehongjun300-bot / hugo
 
-用于集中登记、评估和接入 Codex 视频制作项目。资源以原仓库链接和简明说明为主；接入前按各项目许可证及素材来源逐项核查。
+视频制作的工作台：一个统一的 agent 协作约定 + 按项目分目录的真实产出 + 可复用资源登记。
 
-## 快速入口
+## 开始
 
-- [资源目录](resources/README.md)：项目用途、形态和许可筛选提示。
-- [工作流程](WORKFLOW.md)：从评估到接入、制作、复核与归档的统一流程。
-- [项目状态](PROJECT_STATUS.md)：当前进度与下一步交接记录。
-- [决策记录](DECISIONS.md)：记录重要选择及其理由。
+**读 [AGENTS.md](AGENTS.md)，只读这一页。** 它包含三条协作规矩、开工/收工协议和文件地图。
+其他文档都从那一页链接出去，不维护第二份规则。
 
-## 协作约定
+```bash
+python tools/board.py pick     # 看现在该做什么
+python tools/board.py list     # 看全部任务
+python tools/board.py check    # 收工前自检
+```
 
-任何 agent 开始工作时先读本页、`PROJECT_STATUS.md` 和 `WORKFLOW.md`；仅在任务涉及资源许可或实现细节时再读对应资源条目。完成工作后更新状态、决策及资源条目，留下具体下一步。避免重复通读无关材料。
+## 目录
+
+```
+AGENTS.md            唯一入口：协作规则 + 开工/收工协议
+board/tasks.json     唯一的进度数据源（任务、状态、证据、待回答问题）
+PROJECT_STATUS.md    看板的人类可读视图（自动生成，勿手改）
+tools/board.py       看板唯一写入口
+DECISIONS.md         重要选择及其理由
+WORKFLOW.md          从评估到交付的四个阶段
+projects/<ID>/       每个真实项目一个目录：PROMPT / NOTES / 工程 / out
+resources/           可复用工具与素材的登记（含许可筛查）
+```
+
+## 当前
+
+- **进行中：无**（上限 1）
+- P-001 5 秒动效宣传片 v1 **已完成** —— `projects/P-001-5s-splash/out/v1.mp4`
+  实测 1920×1080 / 60fps / 300 帧 / 5.000s。
+- 下一条可接手：P-002 资源许可证核查，或 P-003 Remotion 最小链路。
+
+完整状态与待确认事项见 [PROJECT_STATUS.md](PROJECT_STATUS.md)。

@@ -12,6 +12,20 @@
 | dashi-animationstyle | Agent Skill + 风格模板/脚本 | 中文口播解说 / 信息与流程可视化 | 免费 | MIT；附带作者口播.wav 仅供测试 Skill | [条目](dashi-animationstyle.md) |
 | wtt-code-animation-studio | Agent Skill + 项目模板/流水线 | 中文旁白代码动画 / 文章与故事可视化 | 免费 | 根文档声明 CC BY-NC-SA 4.0；子文档冲突，接单选用待澄清 | [条目](wtt-code-animation-studio.md) |
 
+## 核查进度
+
+| 项目 | 许可结论 | 核查日期 | 结论 |
+|---|---|---|---|
+| video-shotcraft | Apache-2.0（未核实原文） | — | 待开始（P-002） |
+| xilo-opus-video | MIT（未核实原文） | — | 待开始（P-002） |
+| lemo-opuscar | MIT / 样片 CC BY 4.0（未核实） | — | 待开始（P-002） |
+| mg-styles-15 | MIT（未核实原文） | — | 待开始（P-002） |
+| huashu-art-motion | MIT + 角色排除项（未核实） | — | 待开始（P-002） |
+| dashi-animationstyle | MIT（未核实原文） | — | 待开始（P-002） |
+| wtt-code-animation-studio | CC BY-NC-SA 4.0，子文档冲突 | — | 待开始（P-002），接单需先澄清 |
+
+> 核查任务在看板 [P-002](../PROJECT_STATUS.md)。因 P-001 不动第三方素材，本轮不阻塞出片。
+
 ## 状态
 
 尚未验证各仓库当前内容、许可证原文、依赖或素材来源。接入顺序与选择由实际项目需求决定。

@@ -1,0 +1,21 @@
+node_modules/
+.DS_Store
+.env
+.env.*
+*.log
+
+# 本机 agent 运行时缓存
+.cache/
+.remotion/
+.claude/
+.codex/
+
+# 成片与渲染中间产物（工程入库，产物按需单独归档）
+projects/*/out/*.mp4
+projects/*/out/*.mov
+projects/*/node_modules/
+
+# 上游工具副本：302MB / 11825 文件，按需本地获取，不入库
+# 若要固定版本，改用 git submodule 指向上游仓库
+projects/*/tool-src/
+projects/*/*.zip
